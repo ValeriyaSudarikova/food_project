@@ -91,3 +91,5 @@ function form() {
         .then(res => console.log(res));
 
 }
+
+export default form;

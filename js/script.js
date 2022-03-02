@@ -1,19 +1,19 @@
-window.addEventListener('DOMContentLoaded', () => {
 
-    const tabs = require('./modules/tabs'),
-          modal = require('./modules/modal'),
-          timer = require('./modules/timer'),
-          menu = require('./modules/menu'),
-          slider = require('./modules/slider'),
-          calculator = require('./modules/calculator'),
-          formData = require('./modules/form-data');
+    import calc from './modules/calc';
+    import form from './modules/form';
+    import menu from './modules/menu';
+    import modal from './modules/modal';
+    import slider from './modules/slider';
+    import tabs from './modules/tabs';
+    import timer from './modules/timer';
 
-    tabs();
+window.addEventListener('DOMContentLoaded', function() {
+
+    calc();
+    form();
     modal();
-    timer();
-    menu();
     slider();
-    calculator();
-    formData();
+    timer();
+    tabs();
     
 });
